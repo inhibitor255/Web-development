@@ -1,0 +1,87 @@
+.mother {
+    margin: 20px 40px 10px;
+}
+
+.mesimg {
+    margin-right: 600px;
+    margin-left: 20px;
+    width: 40px;
+
+}
+
+.left {
+    display: inline-block;
+    width: 40%;
+}
+
+.right {
+    display: inline-block;
+    width: 40%;
+}
+
+.img {
+    width: 150%;
+}
+.button {
+    border-radius: 200px;
+    background-color: #0a7cff;
+    font-size: 15px;
+    padding: 15px 40px;
+    border-style: none;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.metaimg {
+    width: 25%;
+}
+
+.leftfooter {
+    display: inline-block;
+    font-size: 13px;
+    width: 40%;
+}
+
+.rightfooter {
+    display: inline-block;
+    width: 40%;
+}
+
+.rft {
+    color: inherit;
+    margin-right: 15px;
+    text-decoration: none;
+    
+}
+
+.menutool {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bolder;
+    color: black;
+
+}
+
+.menutool:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #0a7cff;
+    border-bottom-width: 3px;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.motherleft {
+    width: 80%;
+}
+
+.header {
+    font-size: 80px;
+    background-image: linear-gradient(83.84deg, rgb(0, 136, 255) -6.87%, rgb(160, 51, 255) 26.54%, rgb(255, 92, 135) 58.58%);
+    background-size: cover;
+    color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    margin-left: none;
+}

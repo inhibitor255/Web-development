@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- MDB css link  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="" id="box"></div>
+
+    <div class="container">
+      <h1>My Shopping list</h1>
+
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Image</th>
+            
+          </tr>
+        </thead>
+        <tbody class="text-center" id="page"></tbody>
+      </table>
+    </div>
+
+    <script>
+      let box = document.querySelector("#box");
+      let page = document.querySelector("#page");
+      let list = "";
+
+      box.style.display = "none";
+
+      fetch("https://fakestoreapi.com/products")
+        .then((res) => res.json())
+        .then((result) => {
+          for (let i = 0; i < result.length; i++) {
+            list += `
+            <tr onclick="detail(${result[i].id})">
+              <td>${result[i].id}</td>
+              <td>${result[i].title}</td>
+              <td>${result[i].price} $</td>
+              <td>${result[i].rating.rate}</td>
+              <td>
+                <a href="${result[i].image}" target = "_blink" ><img src="${result[i].image}" style="width: 70px;" ></a>
+              </td>
+            </tr>`;
+          };
+
+          page.innerHTML = list;
+          //
+        });
+      detail = (id) => {
+        fetch("https://fakestoreapi.com/products/" + id)
+          .then((response) => response.json())
+          .then((data) => {
+            box.innerHTML = `
+                    <div class="d-flex row justify-content-center">
+                      <div class="card col-6 shadow mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <div class="imageContainer position-relative">
+                              <img
+                                src="${data.image}"
+                                class="img-fluid rounded-start h-100 w-100"
+                                alt="js onclick png"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Name : ${data.title}</h5>
+                              <h5 class="card-title">Price : ${data.price}$</h5>
+                              <h5 class="card-title">Rating : ${data.rating.rate}</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+            box.style.display = "block";
+          });
+      };
+    </script>
+    <!-- MDB js link -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+    ></script>
+  </body>
+</html>

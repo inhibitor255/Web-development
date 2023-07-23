@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- MDB css link  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      img {
+        width: 400px;
+        display: none;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        border-radius: 50%;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container m-3">
+      <button id="showBtn" class="btn btn-primary">Show</button>
+      <button id="hideBtn" class="btn btn-warning">Hide</button>
+      <button id="toggleBtn" class="btn btn-danger">Toggle</button>
+    </div>
+    <img
+      class="img-thumbnail hover-shadow"
+      src="./image/portrait_base__bwsgtdddcl7m_large.jpg"
+      id="myImg"
+    />
+
+    <div class="container m-3">
+      <button class="animationBtn btn m-5 btn-info">Animation</button>
+      <button class="btn btn-success stop">Stop</button>
+      <button class="btn btn-secondary chain">Chain</button>
+      <div class="box position-relative"></div>
+
+      <h1 id="codeLab">Code Lab</h1>
+    </div>
+
+    <!-- MDB js link -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+    ></script>
+
+    <!-- jquery js link -->
+    <script src="cdnjs.cloudflare.com_ajax_libs_jquery_3.7.0_jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#showBtn").click(function () {
+          $("#myImg").show(2000);
+        });
+
+        $("#hideBtn").click(function () {
+          $("#myImg").hide(2000);
+        });
+
+        $("#toggleBtn").click(function () {
+          $("#myImg").fadeToggle(2000);
+        });
+
+        $(".animationBtn").click(function () {
+          $(".box").animate(
+            {
+              left: "300px",
+              top: "300px",
+              width: "+=150px",
+              height: "+=150px",
+            },
+            3000
+          );
+        });
+
+        $(".stop").click(function () {
+          $(".box").stop();
+        });
+
+        $(".chain").click(function () {
+          $("#codeLab").css("color", "violet").hide(2000).show(1999);
+        });
+      });
+    </script>
+  </body>
+</html>

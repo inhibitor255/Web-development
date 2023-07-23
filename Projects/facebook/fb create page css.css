@@ -1,0 +1,98 @@
+
+.mother {
+    width: 100%;
+    background-color: #385898;
+}
+
+.upper {
+    width: 100%;
+    height: 80px;
+    background-color: #385898;
+}
+
+.lower {
+    width: 100%;
+    height: 900px;
+    background-color: rgb(233, 234, 235);
+    padding: 5px;
+}
+
+.lbleft {
+    display: inline-block;
+    width: 40%;
+    height: 500px;
+    background-color: #fff;
+    padding: 15px 40px;
+    margin-left: 58px;
+}
+
+.lbright {
+    display: inline-block;
+    width: 40%;
+    height: 500px;
+    background-color: #fff;
+    padding: 15px 40px;
+    margin-left: 30px;
+}
+
+.hpb {
+    text-align: center;
+    font-size: 19px;
+}
+
+.lbp {
+    color: #90949c;
+}
+
+.lbleftimg {
+    margin-left: 225px;
+}
+
+.lbrightimg {
+    margin-left: 225px;
+}
+
+.lbb {
+    margin-left: 265px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 2px;
+    border-style: none;
+    border: 1px gainsboro solid;
+}
+
+.lowerheader {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.lowerpara {
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+.fblogo {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    margin-left: 68px;
+    margin-right: 10px;
+}
+
+.signbutton {
+    background-color:  #42b72a;
+    border-color:  #42b72a;
+    color: #fff;
+    border-style: none;
+    font-weight: bold;
+    padding: 8px 13px;
+    border-radius: 3px;
+}
+
+.fblogin {
+    margin-left: 960px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}

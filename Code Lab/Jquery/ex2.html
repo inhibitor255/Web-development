@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- MDB css link  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <h1 title="Code Lab">
+        Hello Welcome from Code Lab
+    </h1>
+
+    <div class="container w-25 ">
+      <input type="text" class="form-control" name="" id="userName">
+      <button class="btn btn-black" type="button">Enter</button>
+      <select class="form-select" name="" id="myFood">
+        <option value="apple">A</option>
+        <option value="banana">B</option>
+        <option value="coconut">C</option>
+      </select>
+      <button class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark">Register</button>
+    </div>
+
+
+    <!-- MDB js link -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+    ></script>
+    <!-- jquery js link -->
+    <script src="cdnjs.cloudflare.com_ajax_libs_jquery_3.7.0_jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           
+            $("button").click(function (){
+                console.log($("h1").attr("title"));
+                console.log($("#myFood").val());
+
+            });
+
+
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+
+.mother {
+ margin: 20px; 
+ padding: 200px;
+ background-color: #f0f2f5;
+}
+
+.fbimg {
+    width: 300px;
+    
+}
+
+.para {
+    font-size: 170%;
+}
+
+.left {
+    display: inline-block;
+    width: 45%;
+    padding: 50px;
+}
+
+.right {
+    display: inline-block;
+    width: 45%;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+.rbaa {
+   text-decoration: none;
+   color: black;
+   font-weight: bolder;
+   margin-left: 45px;
+}
+
+.rbaa:hover {
+    border-bottom: solid;
+}
+
+.gh {
+    display: inline-block;
+}
+
+.rtt {
+    display: block;
+    
+
+}
+
+.fl {
+    text-decoration: none;
+    color: gray;
+    margin-left: 15px;
+}
+
+.fl:hover {
+    border-bottom: solid 1px;
+}
+
+.rt {
+    background-color: white;
+    padding: 15px 13px 18px;
+    border-radius: 7px;
+    border: 1px solid #ccc!important;
+    height: 300px;
+    width: 400px;
+    border-style: ridge;
+}
+ 
+.rtti {
+    width: 360px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 13px;
+    border: 1px solid #ccc!important;
+    font-size: 15px;
+}
+
+.but1 {
+    width: 360px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: #1877f2;
+    border-radius: 12px;
+    border-style: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.rta {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    border-bottom: solid lightgray 1px;
+}
+
+.but2 {
+    width: 240px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    background-color: #42b72a;
+    border-radius: 12px;
+    border-style: none;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+
+

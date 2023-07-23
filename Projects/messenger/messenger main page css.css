@@ -1,0 +1,121 @@
+.mother {
+    margin: 30px 170px;
+}
+
+.header {
+    font-size: 80px;
+    background-image: linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%);
+    background-size: cover;
+    color: transparent;
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+}
+
+.para {
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 10px 10px;
+
+    margin: 55px 20px;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    margin-right: 450px;
+
+}
+
+.left {
+    display: inline-block;
+    width: 40%;
+
+}
+
+.right {
+    display: inline-block;
+    width: 40%;
+
+}
+
+.apple {
+    width: 100px;
+}
+
+.micro {
+    width: 100px;
+    height: 30px;
+}
+
+.mesimg {
+    width: 130%
+}
+
+.menuitem {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menuitem:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #0088FF;
+}
+
+.buttonlogin {
+    margin: 15px 15px;
+    background-color: #0a7cff;
+    border-style: none;
+    border-radius: 24px;
+    color: white;
+    font-size: 19px;
+    height: 40px;
+    padding: 2px 20px 0px;
+}
+
+.input1 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.input2 {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.common {
+    border-style: none;
+    background: rgba(0, 0, 0, .04);
+    border-radius: 15px;
+    padding: 10px 17px;
+    width: 300px;
+}
+
+.footleft {
+    display: inline-block;
+    width: 45%;
+    font-size: 13px;
+}
+
+.footright {
+    display: inline-block;
+    width: 45%;
+}
+
+.footrightitem {
+    margin-left: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.metaimg {
+    width: 25%;
+}
+
+.leftmother {
+    width: 70%;
+}
